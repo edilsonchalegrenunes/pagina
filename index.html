@@ -12,6 +12,23 @@
             box-sizing: border-box;
         }
 
+        /* Estilo para o botão Voltar ao Topo */
+        .voltar-topo {
+            background-color: var(--cor-secundaria);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .voltar-topo:hover {
+            background-color: var(--cor-acento);
+        }
+        
+        /* Restante do estilo original */
         /* Definindo cores principais */
         :root {
             --cor-primaria: #2c3e50;
@@ -72,7 +89,7 @@
         section {
             padding: 20px;
             margin: 20px 0;
-            text-align: center; /* Centraliza o texto das demais seções */
+            text-align: center;
         }
 
         section h2 {
@@ -88,7 +105,7 @@
 
         /* Seção sobre a turma */
         #sobre p {
-            text-align: justify; /* Justifica o texto na seção sobre a turma */
+            text-align: justify;
         }
 
         /* Tabela de Alunos */
@@ -183,35 +200,38 @@
                 </td>
             </tr>
         </table>
+        <!-- Botão Voltar ao Topo -->
+        <button class="voltar-topo" onclick="scrollToTop()">Voltar ao Topo</button>
     </section>
 
     <!-- Seção de Agenda -->
     <section id="agenda">
         <h2>Agenda</h2>
-        <p>Aqui estão algumas das principais atividades e datas importantes para a turma:</p>
         <ul>
             <li>Prova de Matemática - 15 de Abril de 2025</li>
             <li>Simulado de Ciências - 22 de Maio de 2025</li>
             <li>Entrega de Projetos - 10 de Junho de 2025</li>
             <li>Festa de Conclusão - 15 de Dezembro de 2025</li>
         </ul>
+        <!-- Botão Voltar ao Topo -->
+        <button class="voltar-topo" onclick="scrollToTop()">Voltar ao Topo</button>
     </section>
 
     <!-- Seção de Materiais -->
     <section id="materiais">
         <h2>Materiais de Estudo</h2>
-        <p>Aqui você encontra links para materiais úteis de estudo:</p>
         <ul>
             <li><a href="https://cursos.alura.com.br/loginForm" target="_blank">ALURA</a></li>
             <li><a href="https://www.suapesquisa.com" target="_blank">Suapesquisa - Recursos Educacionais</a></li>
             <li><a href="https://www.youtube.com/c/KhanAcademyBrasil" target="_blank">Canal do YouTube Khan Academy Brasil</a></li>
         </ul>
+        <!-- Botão Voltar ao Topo -->
+        <button class="voltar-topo" onclick="scrollToTop()">Voltar ao Topo</button>
     </section>
 
     <!-- Seção de Alunos -->
     <section id="alunos">
         <h2>Alunos</h2>
-        <p>Abaixo estão os alunos da turma:</p>
         <table>
             <thead>
                 <tr>
@@ -302,16 +322,22 @@
                 </tr>
                 <tr>
                     <td>LETICIA PAS
-
             </tbody>
         </table>
+        <!-- Botão Voltar ao Topo -->
+        <button class="voltar-topo" onclick="scrollToTop()">Voltar ao Topo</button>
     </section>
 
     <footer>
         <p>&copy; 2025 ENSINO MEDIO IF MAT/CNT 3ª Série - Noite - B</p>
         <p>&copy; Colégio Rachel de Queiroz - Prof. Edilson Chalegre Nunes</p>
     </footer>
+
+    <script>
+        // Função para rolar até o topo
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
-
-
